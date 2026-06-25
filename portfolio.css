@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #222;
+    
+}
+.container{
+    display: flex;
+}
+.sideBox{
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 30px;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+
+.sideBox h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f30b0b;
+    font-size: 60px;
+    font-weight: 600;
+}
+.sideBox h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    padding-left: 30px;
+
+}
+.rightBox{
+    position: relative;
+  
+    width: 100%;
+    max-width: 4500px;
+    background: linear-gradient(135deg, #222, #222);
+    color: #fff;
+    margin-left: 10%;
+    text-align: center;
+}
+.home{
+   
+    width: 30px;
+}
+.aboutme{
+   
+    width: 35px;
+}
+.project{
+    width: 30px;
+}
+.prop{
+    width: 30px; background-color: #221f1f;
+}
+
+.contact{
+    width: 30px;
+}
+#dashed{
+    width: 30px;
+    padding: 0;
+    padding-bottom: -10px;
+    padding-left: 15px;
+}
+#SB{
+    margin: 10px;
+}
+.id_card{
+    width: 90%;
+    max-width: 450px;
+   
+    color: #fff;
+    margin: 150px;
+    margin-left: 30%;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    
+}
+.id_card h3{
+   font-size: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 500;
+   color: #d9d9d1;
+   padding: 10px;
+}
+.github{
+    width: 30px;
+    padding: 3px;
+}
+.twitter{
+    width: 30px;
+    padding: 3px;
+}
+.linkedin{
+    width: 35px;
+    padding: 3px;
+}
+.facebook{
+    width: 25px;
+    padding: -1px;
+}
+.instagram{
+    width: 34px;
+    padding: 3px;
+    cursor: pointer;
+}
+.contact1{
+    background: #f30b0b;
+    color: #fff;
+    width: 35%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #f30b0b;
+    font-size: 15px;
+    margin: 10px;
+}
+.scroll{
+    font-size: 15px;
+    color: #d9d9d1;
+}
+.tri1{
+    width: 40px;
+    transition: 140px 220px ;
+}
+.sohamBhau{
+   width: 200px;
+   border-radius: 250px;
+}
+.about_box{
+    width: 100%;
+    max-width: 4500px;
+   
+    color: #fff;
+   
+    padding: 10%;
+}
+.about_soham h2{
+    font-weight: 600;
+    color: #6a6a6a;
+    font-size: 40px;
+    transform: translateX(-12em);
+}
+
+.about_soham1{
+    margin: 20px;
+    width: 120%;
+    height: 400px;
+    display: flex;
+    margin-left: -10% ;
+}
+.about_soham1 img{
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+}
+.about_soham_data{
+    height: 100%;
+    width: 250%;
+    margin-left: -40px;
+    padding: 10px;
+    background: rgb(89, 88, 88);
+    color: #fff;
+    width: 70%;
+    border-radius: 20px;
+    border: 2px solid rgb(89, 88, 88);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    
+}
+.information{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+.about_box_list{
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    
+    margin: 20px;
+}
+.about_box_list td{
+    padding: 6px;
+}
+.downlod_CV{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(14, 12, 12);
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transform: translateX(-350px);
+    transition: .5s;
+}
+.downlod_CV:hover{
+    background: #d8171d;
+    color: #fff;
+}
+ 
+.about_soham .active-popup{
+    transform: scale(1);
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.S{
+    transform: translateX(3px) translatey(-100px);
+    
+}
+.oham{
+    color: #fff;
+    font-size: 25px;
+    transform: translateX(35px) translateY(-137px);
+}
+.G{
+    transform: translatey(-130px);
+}
+.arrow{
+    width: 0;
+     height: 0;
+     border-left: 50px solid transparent; 
+      border-right: px solid transparent; 
+      border-top: 40px solid transparent;
+    border-bottom: 40px solid rgb(89, 88, 88);
+    position: relative;
+    transform: translateX(10px) translateY(10px);
+   
+    
+}
+.arrow1{
+    width: 0;
+     height: 0;
+     border-left: 40px solid transparent; 
+      border-right: 0px solid transparent; 
+      border-top: 20px solid rgb(89, 88, 88);
+   
+    position: relative;
+    transform: translateX(-40px) translateY(89px);
+   
+    
+}
+.about_box_style{
+    display: flex;
+    margin-right: 30em;
+    width: 100%;
+    height: 10%;
+}
+.BOX{
+    width: 40px;
+    margin-right: 10px ;
+}
+.Box{
+    width: 25%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+}
+.about_title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #9d9d9d;
+}
+.about_subtitle{
+    
+    font-size: 15px;
+    font-weight: 500;
+    color: #9d9d9d;
+}
+.project_box{
+    text-align: left;
+    margin-left: 130px;
+    
+}
+.project_box h2{
+    text-align: left;
+}
+.project_title{
+    font-size: 40px;
+    color: #9d9d9d;
+    font-weight: 600;
+    margin: 30px;
+    margin-bottom: 20px;
+
+}
+.portfolio_filter{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin: 20px;
+   
+}
+.portfolio_filter:hover{
+    color: #d8171d;
+}
+.Project1{
+    display: flex;
+}
+.Project2{
+    display: flex;
+}
+
+#proj{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 5px;
+    width: 30%;
+    height: 60%;
+}
+.note{
+    width: 100%;
+    height: 110%;
+}
+.note:hover{
+    backdrop-filter: blur(20px);
+   transition: 1s;
+}
+.weather{
+    width: 100%;
+    height: 110%;
+}
+.paso{
+    width: 100%;
+    height: 110%;
+}
+.logk{
+    width: 100%;
+    height: 110%;
+}
+.to-do-list{
+    width: 100%;
+    height: 110%;
+}
+.contact_box{
+    height: 100vh;
+    display: flex;
+    background: #222;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.contact_karo_meko{
+    display: block;
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+}
+.contact_img{
+    border-radius: 10px;
+    box-shadow: 10px solid #222;
+}
+.C{
+    margin: 20px;
+}
+.contact_R h2{
+    font-weight: 600;
+    color: #6a6a6a;
+    font-size: 40px;
+}
+.contact_R hr{
+    border: 2px solid #6a6a6a;
+    border-radius: 10px;
+    width: 50vh;
+    margin-bottom: 20px;
+
+} 
+.contact_inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact_karo_meko textarea{
+    height: 160px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact_inputs:focus{
+    border: 2px solid #222;
+}
+.contact_inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact_right_title button{
+    background: #d8171d;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 10px;
+    border: none;
+    font-weight: 500;
+}
+@media (max-width:800px) {
+    .contact_inputs{
+        width: 80vw;
+    }
+    .contact_left{
+        display: none;
+    }
+    .sideBox{
+        display: none;
+    }
+    .contact_karo_meko{
+       transform: translateX(-3em);
+    }
+    .id_card{
+        transform: translateX(-11em);
+    }
+    .selection_title{
+        transform: translateX(-6em);
+    }
+    .about_soham1{
+        margin: 20px;
+        width: 100%;
+        height: 300px;
+    }
+    .arrow{
+        display: none;
+    }
+    .arrow1{
+        display: none;
+    }
+    .about_soham_data{
+        transform: translateX(-8em) translateY(20em);
+        height: 80vw;
+    }
+    .about_soham1 img{
+     width: 160px;
+    }
+    .about_soham_data p{
+        font-size: 15px;
+    }
+    .about_box_style{
+        transform: translateY(25em);
+        display: flow-root;
+    }
+    .project_box{
+        transform:translateX(-8em) translateY(30em);
+    }
+    .Project1{
+        display: flow-root;
+        
+    }
+    .Project2{
+        display: flow-root;
+      
+    }
+    .portfolio_filter{
+        font-size: 13px;
+        margin-left: 5px;
+        font-weight: 500;
+    }
+}
